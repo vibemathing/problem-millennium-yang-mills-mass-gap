@@ -208,72 +208,104 @@ This file is generated from repository truth and bounded for the web channel. It
     "acceptance": {
       "policy": "solution-admission-v1"
     },
-    "aliases": [],
+    "aliases": [
+      "Yang-Mills Existence and Mass Gap",
+      "Yang–Mills & the Mass Gap"
+    ],
     "allowed_axioms": [
-      "none"
+      "classical-mathematics",
+      "official-Yang-Mills-axiomatic-requirements-only"
     ],
     "assumptions": [
-      "This record must never be treated as an active research problem."
+      "Only hypotheses explicitly present in the frozen official statement and the selected accepted branch are admitted.",
+      "Finite computation, restricted models, conditional lemmas and special cases do not close the universal root statement.",
+      "Statement-faithfulness and current-status review must close before Result admission."
     ],
     "constraints": {
       "allowed_adapters": [
-        "template-validation-v1"
+        "source-fidelity-review-v1",
+        "lean-obligation-v1"
       ],
       "allowed_methods": [
-        "discovery"
+        "discovery",
+        "derivation",
+        "computation",
+        "proof",
+        "formalization"
       ],
-      "max_attempts": 1,
+      "max_attempts": 20,
       "runtime": {
-        "max_output_bytes": 65536,
-        "max_retries": 1,
-        "max_transitions": 10,
-        "timeout_seconds": 60
+        "max_output_bytes": 5242880,
+        "max_retries": 3,
+        "max_transitions": 300,
+        "timeout_seconds": 1800
       }
     },
-    "created_at": "2026-09-06T00:00:00Z",
+    "created_at": "2026-08-16T18:20:00+08:00",
     "definitions": [
       {
-        "definition": "A non-admitted draft record used only to validate the physical public repository template.",
-        "term": "template placeholder"
+        "definition": "Construction of a non-trivial quantum Yang–Mills theory on R⁴ meeting at least the axiomatic properties required by the official Clay problem statement.",
+        "term": "existence"
+      },
+      {
+        "definition": "A strictly positive lower bound Δ>0 separating the vacuum energy from the rest of the Hamiltonian spectrum, in the official formulation.",
+        "term": "mass gap"
       }
     ],
     "domain": {
-      "description": "Template-only placeholder domain; not a mathematical research question.",
+      "description": "四维欧氏空间 R⁴ 上、任意紧致简单规范群 G 的非平凡量子 Yang–Mills 理论及其谱。",
       "objects": [
-        "template-placeholder"
+        "compact simple gauge group G",
+        "four-dimensional Euclidean space R⁴",
+        "quantum Yang–Mills theory satisfying the official axiomatic strength",
+        "Hamiltonian spectrum"
       ]
     },
-    "lifecycle": "draft",
+    "lifecycle": "active",
     "msc": [
-      "00A00"
+      "81T13"
     ],
-    "problem_id": "problem:template-placeholder",
+    "problem_id": "problem:millennium-yang-mills-mass-gap",
     "quantifiers": [
       {
-        "domain": "a reviewed public canonical ProblemContract supplied by the repository builder",
-        "kind": "find",
+        "domain": "compact simple gauge groups",
+        "kind": "forall",
         "variables": [
-          "replacement_problem"
+          "G"
+        ]
+      },
+      {
+        "domain": "non-trivial quantum Yang–Mills theory on R⁴ with mass gap Δ>0",
+        "kind": "exists",
+        "variables": [
+          "theory",
+          "Δ"
         ]
       }
     ],
     "schema_version": "1.0.0",
     "sources": [
       {
-        "retrieved_at": "2026-09-06T00:00:00Z",
-        "source": "Vibe Mathing public Web Harness",
-        "source_record_id": "public-template-placeholder-v1",
-        "url": "https://github.com/vibemathing/vibe-mathing-problem-public-template"
+        "retrieved_at": "2026-08-16T18:20:00+08:00",
+        "source": "Clay Mathematics Institute",
+        "source_record_id": null,
+        "url": "https://www.claymath.org/millennium/yang-mills-the-maths-gap/"
+      },
+      {
+        "retrieved_at": "2026-08-16T18:20:00+08:00",
+        "source": "Clay Mathematics Institute official problem descriptions",
+        "source_record_id": null,
+        "url": "https://www.claymath.org/wp-content/uploads/2022/02/MPPc.pdf"
       }
     ],
     "statement": {
-      "language": "en",
-      "text": "This is a non-research placeholder. Replace it with exactly one reviewed public ProblemContract before creating a public problem repository.",
+      "language": "zh-CN",
+      "text": "证明对任意紧致简单规范群 G，在 R⁴ 上存在非平凡量子 Yang–Mills 理论，并具有质量间隙 Δ>0；其中“存在”必须建立至少达到 Clay 官方问题陈述所引用强度的公理性质。经典 Yang–Mills 方程、微扰展开、格点 Monte Carlo、物理共识、低维模型或仅有质量尺度的计算均不能替代四维连续量子理论的构造与严格谱隙证明。",
       "version": 1
     },
-    "title": "Vibe Mathing public problem repository template placeholder",
-    "updated_at": "2026-09-06T00:00:00Z"
+    "title": "Yang–Mills 理论存在性与质量间隙",
+    "updated_at": "2026-09-07T08:10:00Z"
   },
-  "problem_contract_sha256": "e64cd03254e03dd661eade23243c3c21793fc2d8bffa2d33c172cf8ed2e7f940"
+  "problem_contract_sha256": "8d261ef6372623ce357fc61c2bbc566d89163ca53366fe7c6e0ea983f9bae85c"
 }
 ```
