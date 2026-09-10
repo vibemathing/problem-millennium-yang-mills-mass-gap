@@ -13,6 +13,13 @@
       "tree_sha256": "8274406149b3477fe78850a18ecd9d0d59637693b32e67cf6d9eaaaa35705ec4",
       "source_manifest_sha256": "fedd664f1ac16c5232eb05076b73f2bab566ed672840e7f2af851c77253813b3",
       "importer_policy_sha256": "a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1"
+    },
+    {
+      "harness_snapshot_sha256": "0237d535ca7263133d7fcba79f327f34f07d358e7598e0fad70962b3eaaafd96",
+      "harness_version": "1.2.6",
+      "tree_sha256": "09f8c5d9df058d525c56a46222c9405483f14171858dd74c048f051ef17fec0e",
+      "source_manifest_sha256": "fedd664f1ac16c5232eb05076b73f2bab566ed672840e7f2af851c77253813b3",
+      "importer_policy_sha256": "a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1"
     }
   ],
   "repository": "vibemathing/problem-millennium-yang-mills-mass-gap",
