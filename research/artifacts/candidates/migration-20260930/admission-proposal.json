@@ -1,0 +1,69 @@
+{
+  "status": "proposal_only_not_admitted",
+  "schema_notice": "Review proposal, not an Attempt record or web-attempt packet",
+  "base_revision": "5dfe77eca549490025f1ab5f21ddf9abdd1f91f0",
+  "problem_id": "problem:millennium-yang-mills-mass-gap",
+  "problem_contract_sha256": "8d261ef6372623ce357fc61c2bbc566d89163ca53366fe7c6e0ea983f9bae85c",
+  "proposed_identifiers": {
+    "attempt_id": "attempt:yang-mills-mass-gap-source-fidelity-20260930",
+    "route_id": "route:yang-mills-mass-gap-migration-audit-20260930",
+    "graph_id": "graph:yang-mills-mass-gap-migration-20260930",
+    "first_obligation": "Y1"
+  },
+  "objective": "Validate source fidelity and explicit prerequisites before any admitted mathematical execution",
+  "owner_skill_proposed": "math-discovery",
+  "evidence_ceiling": "candidate_only",
+  "nodes": [
+    {
+      "local_label": "Y1",
+      "objective": "Freeze genuine four-dimensional quantum object",
+      "depends_on": [],
+      "status": "proposed_open"
+    },
+    {
+      "local_label": "Y2",
+      "objective": "Specified finite lattice positivity framework",
+      "depends_on": [
+        "Y1"
+      ],
+      "status": "proposed_open"
+    },
+    {
+      "local_label": "Y3",
+      "objective": "Nontrivial continuum and infinite-volume limit",
+      "depends_on": [
+        "Y1",
+        "Y2"
+      ],
+      "status": "proposed_open"
+    },
+    {
+      "local_label": "Y4",
+      "objective": "Reconstruction after all hypotheses",
+      "depends_on": [
+        "Y3"
+      ],
+      "status": "proposed_open"
+    },
+    {
+      "local_label": "Y5",
+      "objective": "Abstract common-rate dense-domain spectral lemma",
+      "depends_on": [],
+      "status": "proposed_open"
+    },
+    {
+      "local_label": "Y6",
+      "objective": "Uniform rate, density, excitations and every G",
+      "depends_on": [
+        "Y4",
+        "Y5"
+      ],
+      "status": "proposed_open"
+    }
+  ],
+  "root_bridge": "Y3/Y6 unproved; abstract spectral lemma constructs no quantum Yang-Mills theory",
+  "prior_failed_route": "Current failed-routes ledger empty; does not imply absence of historical work",
+  "stop_condition": "Stop before research execution until trusted pre-admission and valid packet exist",
+  "best_verified_result": "Repository baseline validation and source byte identity only; no mathematical admission",
+  "next_obligation": "Trusted admission and source-fidelity review"
+}
