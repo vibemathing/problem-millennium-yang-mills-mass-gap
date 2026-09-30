@@ -1,0 +1,22 @@
+{
+  "attempt_id": "attempt:ym-local-lemma-review-20260930",
+  "problem_id": "problem:millennium-yang-mills-mass-gap",
+  "route_id": "route:ym-local-lemma-review-20260930",
+  "obligation_graph_id": "graph:ym-local-lemma-review-20260930",
+  "problem_contract_sha256": "8d261ef6372623ce357fc61c2bbc566d89163ca53366fe7c6e0ea983f9bae85c",
+  "generator": "candidate-generator",
+  "objective": "PENDING ADMISSION: review the archived conditional local lemma only; graph root is not Millennium closure",
+  "method": "proof",
+  "lifecycle": "blocked",
+  "started_at": "2026-09-30T00:20:00Z",
+  "completed_at": null,
+  "inputs": [
+    "problem-library/records/canonical-problems.jsonl"
+  ],
+  "claims": [
+    "Let H be a nonnegative self-adjoint operator on a Hilbert space, ker H=span{Omega}, ||Omega||=1, and D dense in Omega-perp. Suppose there exists a common m>0 such that every v in D has finite C_v>=0 with 0<=<v,exp(-tH)v><=C_v exp(-mt) for every t>=0. Then the spectrum of H restricted to Omega-perp lies in [m,infinity). This abstract conditional statement does not construct a four-dimensional quantum Yang-Mills theory."
+  ],
+  "artifacts": [
+    "research/artifacts/candidates/migration-20260930/MIGRATION_PROPOSAL.md"
+  ]
+}
