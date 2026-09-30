@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0.0",
+  "graph_id": "graph:ym-local-lemma-review-20260930",
+  "problem_id": "problem:millennium-yang-mills-mass-gap",
+  "attempt_id": "attempt:ym-local-lemma-review-20260930",
+  "route_id": "route:ym-local-lemma-review-20260930",
+  "problem_contract_sha256": "8d261ef6372623ce357fc61c2bbc566d89163ca53366fe7c6e0ea983f9bae85c",
+  "root_obligation_id": "obligation:ym-local-lemma-root-20260930",
+  "obligations": [
+    {
+      "obligation_id": "obligation:ym-local-lemma-root-20260930",
+      "kind": "root_claim",
+      "statement": {
+        "text": "Let H be a nonnegative self-adjoint operator on a Hilbert space, ker H=span{Omega}, ||Omega||=1, and D dense in Omega-perp. Suppose there exists a common m>0 such that every v in D has finite C_v>=0 with 0<=<v,exp(-tH)v><=C_v exp(-mt) for every t>=0. Then the spectrum of H restricted to Omega-perp lies in [m,infinity). This abstract conditional statement does not construct a four-dimensional quantum Yang-Mills theory.",
+        "language": "en",
+        "formal_declaration": null
+      },
+      "statement_sha256": "6ae11b75b0bdda4a3af14dc14e2bf6c4f8196fc0183419dd7befa59e9983933a",
+      "dependencies": [
+        "obligation:ym-local-lemma-spectral-20260930",
+        "obligation:ym-local-lemma-density-20260930"
+      ],
+      "acceptance": {
+        "required_capabilities": [
+          "human_review",
+          "statement_faithfulness"
+        ],
+        "allowed_candidate_kinds": [
+          "proof"
+        ]
+      },
+      "source_refs": [
+        "research/artifacts/candidates/migration-20260930/MIGRATION_PROPOSAL.md"
+      ]
+    },
+    {
+      "obligation_id": "obligation:ym-local-lemma-spectral-20260930",
+      "kind": "lemma",
+      "statement": {
+        "text": "Under the root assumptions, for every v in D and every 0<a<m, the spectral measure mu_v satisfies exp(-at)mu_v([0,a])<=<v,exp(-tH)v><=C_v exp(-mt). Hence mu_v([0,a])=0 by t tending to infinity and E_H([0,a])v=0.",
+        "language": "en",
+        "formal_declaration": null
+      },
+      "statement_sha256": "52e6a0e42bbab47dc93ae303dd2ffa5f4c3d04a2759630c7ac6f04ff69597a4b",
+      "dependencies": [],
+      "acceptance": {
+        "required_capabilities": [
+          "human_review",
+          "statement_faithfulness"
+        ],
+        "allowed_candidate_kinds": [
+          "proof"
+        ]
+      },
+      "source_refs": [
+        "research/artifacts/candidates/migration-20260930/MIGRATION_PROPOSAL.md"
+      ]
+    },
+    {
+      "obligation_id": "obligation:ym-local-lemma-density-20260930",
+      "kind": "lemma",
+      "statement": {
+        "text": "Under the root assumptions and the spectral leaf conclusion, boundedness of E_H([0,a]) extends its vanishing from D to Omega-perp. Taking rational a increasing to m and using countable continuity of spectral projections gives E_H([0,m)) zero on Omega-perp; the endpoint m is allowed.",
+        "language": "en",
+        "formal_declaration": null
+      },
+      "statement_sha256": "a3a7395697255db134969fca5529248858a80876ad100561d14da57e0f05992b",
+      "dependencies": [
+        "obligation:ym-local-lemma-spectral-20260930"
+      ],
+      "acceptance": {
+        "required_capabilities": [
+          "human_review",
+          "statement_faithfulness"
+        ],
+        "allowed_candidate_kinds": [
+          "proof"
+        ]
+      },
+      "source_refs": [
+        "research/artifacts/candidates/migration-20260930/MIGRATION_PROPOSAL.md"
+      ]
+    }
+  ],
+  "created_at": "2026-09-30T00:20:00Z",
+  "supersedes": null
+}

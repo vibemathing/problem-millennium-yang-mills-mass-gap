@@ -1,0 +1,24 @@
+{
+  "status": "proposal_only_not_canonical",
+  "digest_definition": "SHA256 of exact downloaded response body bytes, not extracted text or Git blob SHA",
+  "sources": [
+    {
+      "url": "https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf",
+      "author": "Arthur Jaffe and Edward Witten",
+      "retrieved_at": "2026-09-30T00:12:00Z",
+      "retrieval_time_precision": "approximately one minute; downloaded during this migration",
+      "revision": "retrieved-content-sha256:3558403ca14c11e382f73a09e548222708540bfdf478cf96aa11c52d43e23e09",
+      "content_sha256": "3558403ca14c11e382f73a09e548222708540bfdf478cf96aa11c52d43e23e09",
+      "byte_count": 195976,
+      "quote": "QUANTUM YANG–MILLS THEORY",
+      "quote_locator": "document title",
+      "license": "No redistribution license verified. Citation and short quotation only; source bytes not committed.",
+      "scope": "source identity and statement scope; not verification of a proof"
+    }
+  ],
+  "remaining_work": [
+    "Verify permitted provenance/license policy with trusted importer",
+    "Review and version canonical source updates through authorized admission process",
+    "Lock exact versions of additional papers before treating their claims as evidence"
+  ]
+}
