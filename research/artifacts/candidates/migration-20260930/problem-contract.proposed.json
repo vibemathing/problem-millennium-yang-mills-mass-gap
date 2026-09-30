@@ -1,0 +1,104 @@
+{
+  "acceptance": {
+    "policy": "solution-admission-v1"
+  },
+  "aliases": [
+    "Yang-Mills Existence and Mass Gap",
+    "Yang–Mills & the Mass Gap"
+  ],
+  "allowed_axioms": [
+    "classical-mathematics",
+    "official-Yang-Mills-axiomatic-requirements-only"
+  ],
+  "assumptions": [
+    "Only hypotheses explicitly present in the frozen official statement and the selected accepted branch are admitted.",
+    "Finite computation, restricted models, conditional lemmas and special cases do not close the universal root statement.",
+    "Statement-faithfulness and current-status review must close before Result admission."
+  ],
+  "constraints": {
+    "allowed_adapters": [
+      "source-fidelity-review-v1",
+      "lean-obligation-v1"
+    ],
+    "allowed_methods": [
+      "discovery",
+      "derivation",
+      "computation",
+      "proof",
+      "formalization"
+    ],
+    "max_attempts": 20,
+    "runtime": {
+      "max_output_bytes": 5242880,
+      "max_retries": 3,
+      "max_transitions": 300,
+      "timeout_seconds": 1800
+    }
+  },
+  "created_at": "2026-08-16T18:20:00+08:00",
+  "definitions": [
+    {
+      "definition": "Construction of a non-trivial quantum Yang–Mills theory on R⁴ meeting at least the axiomatic properties required by the official Clay problem statement.",
+      "term": "existence"
+    },
+    {
+      "definition": "A strictly positive lower bound Δ>0 separating the vacuum energy from the rest of the Hamiltonian spectrum, in the official formulation.",
+      "term": "mass gap"
+    }
+  ],
+  "domain": {
+    "description": "四维欧氏空间 R⁴ 上、任意紧致简单规范群 G 的非平凡量子 Yang–Mills 理论及其谱。",
+    "objects": [
+      "compact simple gauge group G",
+      "four-dimensional Euclidean space R⁴",
+      "quantum Yang–Mills theory satisfying the official axiomatic strength",
+      "Hamiltonian spectrum"
+    ]
+  },
+  "lifecycle": "draft",
+  "msc": [
+    "81T13"
+  ],
+  "problem_id": "problem:millennium-yang-mills-mass-gap",
+  "quantifiers": [
+    {
+      "domain": "compact simple gauge groups",
+      "kind": "forall",
+      "variables": [
+        "G"
+      ]
+    },
+    {
+      "domain": "non-trivial quantum Yang–Mills theory on R⁴ with mass gap Δ>0",
+      "kind": "exists",
+      "variables": [
+        "theory",
+        "Δ"
+      ]
+    }
+  ],
+  "schema_version": "1.0.0",
+  "sources": [
+    {
+      "source": "Arthur Jaffe and Edward Witten",
+      "source_record_id": null,
+      "url": "https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf",
+      "retrieved_at": "2026-09-30T00:12:00Z",
+      "revision": "retrieved-content-sha256:3558403ca14c11e382f73a09e548222708540bfdf478cf96aa11c52d43e23e09",
+      "content_sha256": "3558403ca14c11e382f73a09e548222708540bfdf478cf96aa11c52d43e23e09",
+      "quote": "QUANTUM YANG–MILLS THEORY",
+      "license": {
+        "name": "Redistribution license unverified; source bytes not republished",
+        "attribution": "Arthur Jaffe and Edward Witten; citation and short quotation only",
+        "url": null
+      }
+    }
+  ],
+  "statement": {
+    "language": "zh-CN",
+    "text": "证明对任意紧致简单规范群 G，在 R⁴ 上存在非平凡量子 Yang–Mills 理论，并具有质量间隙 Δ>0；其中“存在”必须建立至少达到 Clay 官方问题陈述所引用强度的公理性质。经典 Yang–Mills 方程、微扰展开、格点 Monte Carlo、物理共识、低维模型或仅有质量尺度的计算均不能替代四维连续量子理论的构造与严格谱隙证明。",
+    "version": 1
+  },
+  "title": "Yang–Mills 理论存在性与质量间隙",
+  "updated_at": "2026-09-30T00:20:00Z"
+}
